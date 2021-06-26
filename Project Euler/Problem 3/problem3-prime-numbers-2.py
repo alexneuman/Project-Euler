@@ -48,8 +48,6 @@ def get_prime(n: int, _start: bool=True) -> int:
 				
 	return max_prime
 
-#print(get_prime(600851475143))
-
 from time import perf_counter
 
 s = perf_counter()
