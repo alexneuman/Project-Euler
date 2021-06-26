@@ -4,7 +4,6 @@ from math import sqrt
 
 cheap_count = 0
 total_cheap = 0
-
 expensive_count = 0
 total_expensive = 0
 
@@ -59,7 +58,6 @@ for i in range(20000000000, 20000005000):
 	p = get_prime(i)
 	end = perf_counter()
 	time = end - start
-	#print(f'number={i}, max_prime={p}, time={time}')
 f = perf_counter()
 print(f - s)
 print(f'Num expensive is {expensive_count}, num cheap is {cheap_count} \n, the average size of a cheap call is {total_cheap/cheap_count}, the average size of an expensive call is {total_expensive/expensive_count}')

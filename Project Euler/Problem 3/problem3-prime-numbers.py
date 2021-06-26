@@ -8,8 +8,6 @@ def is_prime(num: int) -> bool:
 		if num % i == 0:
 			return False
 	return True
-	#return not any(num % i == 0 for i in range(2, int(sqrt(num)+ 1)))
-	#return all(num % i != 0 for i in range(2, int(sqrt(num)+ 1)))
 
 def get_prime(n: int, _start: bool=True) -> int:
 	"""Calculates largest factor of  `n`.
@@ -31,6 +29,7 @@ def get_prime(n: int, _start: bool=True) -> int:
 
 from time import perf_counter
 
+#For measuring the time-cost of calculating different numbers
 s = perf_counter()
 for i in range(1, 10000):
 	start = perf_counter()
