@@ -10,7 +10,6 @@ total_expensive = 0
 
 def is_prime(num: int) -> bool:
 	"""Returns whether integer is prime"""
-	a = sqrt(num) + 1
 	count = 0
 	
 	for i in range(2, int(sqrt(num))):
