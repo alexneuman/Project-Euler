@@ -1,4 +1,4 @@
-
+"""Finds the largest prime factor of a given integer"""
 from math import sqrt
 
 def is_prime(num: int) -> bool:
