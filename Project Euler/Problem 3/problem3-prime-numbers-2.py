@@ -48,13 +48,3 @@ def get_prime(n: int, _start: bool=True) -> int:
 	return max_prime
 
 from time import perf_counter
-
-s = perf_counter()
-for i in range(20000000000, 20000005000):
-	start = perf_counter()
-	p = get_prime(i)
-	end = perf_counter()
-	time = end - start
-f = perf_counter()
-print(f - s)
-print(f'Num expensive is {expensive_count}, num cheap is {cheap_count} \n, the average size of a cheap call is {total_cheap/cheap_count}, the average size of an expensive call is {total_expensive/expensive_count}')
