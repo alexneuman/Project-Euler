@@ -1,11 +1,6 @@
 
 from math import sqrt
 
-cheap_count = 0
-total_cheap = 0
-expensive_count = 0
-total_expensive = 0
-
 def is_prime(num: int) -> bool:
 	"""Returns whether integer is prime"""
 	count = 0
