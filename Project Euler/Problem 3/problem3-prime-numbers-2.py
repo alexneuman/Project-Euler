@@ -1,5 +1,4 @@
-"""A program which calculates largest primes of an integer in O(log n) time.
-"""
+
 from math import sqrt
 
 cheap_count = 0
