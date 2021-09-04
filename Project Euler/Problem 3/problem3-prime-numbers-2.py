@@ -9,18 +9,6 @@ def is_prime(num: int) -> bool:
 		if num % i == 0:
 			break
 		count += 1
-	
-	if count/s >= .5:
-		global expensive_count
-		global total_expensive
-		expensive_count += 1
-		total_expensive += count
-		
-	elif count/s <= .5:
-		global cheap_count
-		global total_cheap
-		cheap_count += 1
-		total_cheap += count
 
 	return all(num % i != 0 for i in range(2, int(sqrt(num)+ 1)))
 
